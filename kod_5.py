@@ -62,12 +62,13 @@ grouped = (
 
 # 7.1 Statystyki ogólne dla toksyn
 summary_stats = pd.DataFrame({
-    'metric': ['mean', 'std', 'min', 'max'],
+    'metric': ['mean', 'std', 'min', 'max', 'median'],
     'value': [
         grouped['toxin_count'].mean(),
         grouped['toxin_count'].std(),
         grouped['toxin_count'].min(),
-        grouped['toxin_count'].max()
+        grouped['toxin_count'].max(),
+        grouped['toxin_count'].median()
     ]
 })
 
